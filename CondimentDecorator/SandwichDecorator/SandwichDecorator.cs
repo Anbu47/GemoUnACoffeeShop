@@ -3,7 +3,7 @@ using UnACoffeeShop.ShopItemClass.Food;
 
 namespace UnACoffeeShop.CondimentDecorator.SandwichDecorator
 {
-    public abstract class SandwichDecorator : FoodItem
+    public abstract class SandwichDecorator : Sandwich
     {
         protected Sandwich _sandwich;
 

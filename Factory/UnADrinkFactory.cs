@@ -25,12 +25,12 @@ namespace UnACoffeeShop.Factory
             while (drinkTypeAnswer < 0 || drinkTypeAnswer > drinkTypeNames.Length - 1)
             {
                 Console.WriteLine("Wrong value input please re-input!\n" +
-                    "Hot Coffee (0) Cold Coffee (1) Blended Coffee (2) Milktea (3)");
+                    "Hot Coffee (0) | Cold Coffee (1) | Blended Coffee (2) | Milktea (3)");
                 drinkTypeAnswer = Int32.Parse(Console.ReadLine() ?? string.Empty);
             }
 
             Console.WriteLine("Size?\n"
-                + "S (0) M (1) L (2) XL (3)");
+                + "S (0) | M (1) | L (2) | XL (3)");
             var sizeTypeNames = Enum.GetNames(typeof(DrinkItem.Size));
             var drinkSizeAnswer = Int32.Parse(Console.ReadLine() ?? string.Empty);
             
@@ -40,13 +40,13 @@ namespace UnACoffeeShop.Factory
                 if (drinkSizeAnswer == 2)
                 {
                     Console.WriteLine("Sorry. We don't have Hot Coffee size L. Please re-input!\n"
-                        + "S(0) M(1) XL(3)");
+                        + "S(0) | M(1) | XL(3)");
                     drinkSizeAnswer = Int32.Parse(Console.ReadLine() ?? string.Empty);
                 }
                 else if (drinkSizeAnswer < 0 || drinkSizeAnswer > sizeTypeNames.Length - 1)
                 {
                     Console.WriteLine("Wrong value input please re-input!\n"
-                        + "S(0) M(1) XL(3)");
+                        + "S(0) | M(1) | XL(3)");
                     drinkSizeAnswer = Int32.Parse(Console.ReadLine() ?? string.Empty);
                 }
                 else break;
@@ -55,7 +55,7 @@ namespace UnACoffeeShop.Factory
             while (drinkSizeAnswer < 0 || drinkSizeAnswer > sizeTypeNames.Length - 1)
             {
                 Console.WriteLine("Wrong value input please re-input!\n"
-                    + "S (0) M (1) L (2) XL (3)");
+                    + "S (0) | M (1) | L (2) | XL (3)");
                 drinkSizeAnswer = Int32.Parse(Console.ReadLine() ?? string.Empty);
             }
 
