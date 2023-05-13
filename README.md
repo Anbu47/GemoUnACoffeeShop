@@ -49,12 +49,12 @@ We place **DrinkItem** and **FoodItem** inside **DrinkDecorator** and **FoodDeco
 - **DrinkDecorator** include **AlmondMilk, WholeMilk, WhippedCream** which inherit GetDescription(), Cost() function from **DrinkItem**. 
 - Same go for **BagelDecorator** and **SandwichDecortor**, which inherit function from **Bagel** and **Sandwich** respectively. 
 ### Factory Design Pattern
-Definition: Factory method provides an interface for creating objects in a superclass, but it also allows subclasses to change the type of objects that will be created.
+Definition: Factory method provides an interface for **creating objects** in a **superclass**, but it also allows subclasses to change the type of objects that will be created.
 
 In this code:
 ![image](https://github.com/Anbu47/GemoUnACoffeeShop/assets/29634024/d06632c9-b6b0-4982-979f-79c95761ab71)
 
-**DrinkFactory** and **FoodFactory** inherit Order() function from **ShopItemFactory** to create Coffee, Milktea, Bagel, Sandwich in ShopItem, which is the superclass.
+**DrinkFactory** and **FoodFactory** inherit Order() function from **ShopItemFactory** to create **Coffee, Milktea, Bagel, Sandwich** in **ShopItem**, which is the **superclass**.
 
 ## Reference 
 - https://refactoring.guru/design-patterns/decorator
