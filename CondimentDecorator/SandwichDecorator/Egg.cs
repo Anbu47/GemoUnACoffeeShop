@@ -11,12 +11,12 @@ namespace UnACoffeeShop.CondimentDecorator.SandwichDecorator
 
         public override string GetDescription()
         {
-            return _sandwich.GetDescription() + ", Egg";
+            return "Egg " + _sandwich.GetDescription();
         }
 
         public override double Cost()
         {
-            return _sandwich.Cost();
+            return _sandwich.Cost() + 1f;
         }
     }
 }

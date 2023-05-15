@@ -4,18 +4,18 @@ namespace UnACoffeeShop.CondimentDecorator.BagelDecorator
 {
     public class Butter : BagelDecorator
     {
+        public Butter(Bagel bagel) : base(bagel)
+        {
+        }
+
         public override string GetDescription()
         {
-            return _bagel.GetDescription() + ", Butter";
+            return "Butter " + _bagel.GetDescription();
         }
 
         public override double Cost()
         {
-            return _bagel.Cost();
-        }
-
-        public Butter(Bagel bagel) : base(bagel)
-        {
+            return _bagel.Cost() + 0.5f;
         }
     }
 }

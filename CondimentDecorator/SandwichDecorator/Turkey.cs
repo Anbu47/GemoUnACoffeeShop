@@ -10,7 +10,7 @@ namespace UnACoffeeShop.CondimentDecorator.SandwichDecorator
 
         public override string GetDescription()
         {
-            return _sandwich.GetDescription() + ", Turkey";
+            return "Turkey " + _sandwich.GetDescription();
         }
 
         public override double Cost()

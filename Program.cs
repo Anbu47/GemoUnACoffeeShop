@@ -150,7 +150,7 @@ namespace UnACoffeeShop
                 totalPrice += shopItem.Cost();
             }
 
-            Console.WriteLine($"Tax: 7.25%. Total Price: {(totalPrice * 1.0725f):0.00}$");
+            Console.WriteLine($"Tax: 7.25% | Total Price: {(totalPrice * 1.0725f):0.00}$");
         }
         public static ShopItem OrderDrink()
         {

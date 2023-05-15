@@ -10,7 +10,7 @@ namespace UnACoffeeShop.CondimentDecorator.BagelDecorator
 
         public override string GetDescription()
         {
-            return _bagel.GetDescription() + ", Cream Cheese";
+            return "Cream Cheese " + _bagel.GetDescription();
         }
 
         public override double Cost()

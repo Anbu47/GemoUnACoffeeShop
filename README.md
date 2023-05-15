@@ -6,15 +6,16 @@ To execute this C# console program, you will need to have the following software
 
 - [.NET Core 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
 - [C# vscode extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
-## Execution program
+## Executing program
 Follow these step
-1. Open the project folder using VSCode
-2. Build the program by typing the following command:
+1. Open the project folder or other IDE (make sure to check dependencies)
+2. Uncomment calculatePrice<No.>() in program.cs to test specific function. You might comment other calculatePrice() to easily test the function you want.
+3. Build the program by typing the following command in terminal:
 ```
 dotnet build
 ```
 This will compile your C# code and create an executable file.
-3. Execute the program by typing the following command:
+4. Execute the program by typing the following command in terminal:
 ```
 dotnet run
 ```
